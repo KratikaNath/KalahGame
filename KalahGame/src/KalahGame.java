@@ -30,17 +30,17 @@ import java.util.Scanner;
  *    Pit 6 and 13 are Mancala's
  *    
  *    ------------------------------------------------------------------------------------
- *    Name							Data type					Description
- *    player1						boolean						To check the turns of both the players
- *    arr							int							contains the value of each pit
- *    pitA							int							Player 1 chosen pit
- *    pitB							int							Player 2 chosen pit
- *    Player						object						to take user inputs
- *    k,i,j							int							to run the loops
- *    len							int 						contains the value of the chosen pit
- *    lastPit						int							contains the pit number of the last stone
- *    player1Total					int							stores the total number of stones player 1 has.
- *    player2Total					int							stores the total number of stones player 2 has.
+ *    Name			Data type					Description
+ *    player1			boolean						To check the turns of both the players
+ *    arr		        int						contains the value of each pit
+ *    pitA		        int						Player 1 chosen pit
+ *    pitB			int						Player 2 chosen pit
+ *    Player			object						to take user inputs
+ *    k,i,j			int						to run the loops
+ *    len			int 						contains the value of the chosen pit
+ *    lastPit			int						contains the pit number of the last stone
+ *    player1Total		int						stores the total number of stones player 1 has.
+ *    player2Total		int						stores the total number of stones player 2 has.
  *    
  */
 public class KalahGame {
@@ -129,8 +129,8 @@ public class KalahGame {
 		}
 		else if((lastPit >= 0 && lastPit <= 5)&&(arr[lastPit]==1)){
 			arr[6] += arr[12-lastPit];
-			arr[6] += arr[lastPit];//now
-			arr[lastPit] = 0;//now
+			arr[6] += arr[lastPit];
+			arr[lastPit] = 0;
 			arr[12-lastPit] = 0;
 			player1 = false;
 		}
@@ -144,8 +144,8 @@ public class KalahGame {
 		}
 		else if((lastPit >= 7 && lastPit <= 12)&&(arr[lastPit]==1)){
 			arr[13] += arr[12-lastPit];
-			arr[13] += arr[lastPit];//now
-			arr[lastPit] = 0;//now
+			arr[13] += arr[lastPit];
+			arr[lastPit] = 0;
 			arr[12-lastPit] = 0;
 			player1 = true;
 		}
